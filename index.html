@@ -10,7 +10,7 @@
         fetch('https://raw.githubusercontent.com/lazerkatsweirdstuff/Unblockmarklet/refs/heads/main/link.txt')
             .then(response => response.text())
             .then(url => {
-                document.body.innerHTML = `<iframe src=\"${url.trim()}\" style=\"position:fixed; top:0; left:0; width:100%; height:100%; border:none;\"></iframe>`;
+                document.body.innerHTML = `<iframe src='${url.trim()}' style='position:fixed; top:0; left:0; width:100%; height:100%; border:none;'></iframe>`;
             })
             .catch(error => alert('Error loading content: ' + error));
     })();">Google Slides</a>
